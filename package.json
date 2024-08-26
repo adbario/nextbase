@@ -13,7 +13,7 @@
     "format": "prettier --write . --ignore-unknown",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit --pretty",
-    "clean": "rm -rf node_modules .next/cache && pnpm install",
+    "clean": "rimraf node_modules .next out coverage && pnpm install",
     "postinstall": "next telemetry disable"
   },
   "dependencies": {
@@ -41,6 +41,7 @@
     "postcss": "^8.4.41",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
   },
