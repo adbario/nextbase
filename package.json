@@ -10,7 +10,8 @@
     "lint": "next lint",
     "format": "prettier --write . --ignore-unknown",
     "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit --pretty"
+    "typecheck": "tsc --noEmit --pretty",
+    "postinstall": "next telemetry disable"
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.11.1",
