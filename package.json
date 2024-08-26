@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write . --ignore-unknown",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit --pretty"
   },
   "dependencies": {
     "clsx": "^2.1.1",
