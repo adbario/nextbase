@@ -9,6 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "eslint --fix .",
     "format": "prettier --write . --ignore-unknown",
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit --pretty",
