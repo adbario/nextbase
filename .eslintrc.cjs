@@ -23,13 +23,17 @@ const config = {
       },
     ],
     "@typescript-eslint/no-non-null-assertion": "error",
-    "@typescript-eslint/no-unnecessary-condition": "error",
+    "@typescript-eslint/no-unnecessary-condition": [
+      "error",
+      {
+        allowConstantLoopConditions: true,
+      },
+    ],
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
         argsIgnorePattern: "^_",
         varsIgnorePattern: "^_",
-        caughtErrorsIgnorePattern: "^_",
       },
     ],
     "@typescript-eslint/require-await": "off",
@@ -43,4 +47,5 @@ const config = {
     ],
   },
 };
+
 module.exports = config;
